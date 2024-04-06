@@ -147,3 +147,28 @@ class TestAccountService(TestCase):
         resp = self.client.get(BASE_URL)
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         self.assertEqual(numAccounts, len(resp.get_json()))
+
+    def test_update_account(self):
+        """It should Updatte an exisiting Account"""
+        # Create Test Account
+        test_account = AccountFactory()
+        resp = self.client.post(
+            BASE_URL,
+            json=test_account.serialize()
+        )
+        self.assertEqual(resp.status_code, status.HTTP_201_CREATED)
+
+        # Update Account
+        new_account = resp.get_json()
+        new_account["name"] = "John Smith"
+        resp = self.client.put(
+            BASE_URL,
+            json=new_account
+        )
+        self.assertEqual(resp.status_code, status.HTTP_200_OK)
+        updated_account = resp.get_json()
+        self.assertEqual(updated_account["name"], "John Smith")
+        self.assertEqual(updated_account["email"], test_account.email)
+        self.assertEqual(updated_account["address"], test_account.address)
+        self.assertEqual(updated_account["phone_number"], test_account.phone_number)
+        self.assertEqual(updated_account["date_joined"], str(test_account.date_joined))
