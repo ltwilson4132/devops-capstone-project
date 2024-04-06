@@ -149,7 +149,7 @@ class TestAccountService(TestCase):
         self.assertEqual(numAccounts, len(resp.get_json()))
 
     def test_update_account(self):
-        """It should Updatte an exisiting Account"""
+        """It should Update an exisiting Account"""
         # Create Test Account
         test_account = AccountFactory()
         resp = self.client.post(
@@ -172,3 +172,8 @@ class TestAccountService(TestCase):
         self.assertEqual(updated_account["address"], test_account.address)
         self.assertEqual(updated_account["phone_number"], test_account.phone_number)
         self.assertEqual(updated_account["date_joined"], str(test_account.date_joined))
+
+    def test_update_account_not_found(self):
+        """It should not Update an Account that is not found"""
+        resp = self.client.put(f"{BASE_URL}/0")
+        self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
