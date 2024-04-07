@@ -3,7 +3,7 @@ name: User Story template
 about: Describes features as user stories
 title: ''
 labels: ''
-assignees: ltwilson4132
+assignees: ''
 
 ---
 
