@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM alpine:3.19
 
 # Creates working directory and install dependencies
 WORKDIR /app
