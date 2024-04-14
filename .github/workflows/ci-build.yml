@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: python:3.9-slim
+    container: alpine:3.19
 
     services:
       postgres: 
