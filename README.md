@@ -8,3 +8,6 @@ Completed by Logan Wilson
 
 This repository contains the code for the DevOps Capstone project. The code is based on the [**IBM-CD0285EN-SkillsNetwork DevOps Capstone Project**](https://www.coursera.org/learn/devops-capstone-project?specialization=devops-and-software-engineering) which is part of the [**IBM DevOps and Software Engineering Professional Certificate**](https://www.coursera.org/professional-certificates/devops-and-software-engineering)
 
+[DevOps Capstone Project Certificate](https://www.coursera.org/account/accomplishments/verify/MLHJVYSEU2CN)
+
+[IBM DevOps and Software Engineering Professional Certificate](https://www.coursera.org/account/accomplishments/professional-cert/FFDER3WDNWGU)
