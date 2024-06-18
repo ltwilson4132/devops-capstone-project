@@ -32,3 +32,4 @@ httpie==3.2.1
 Flask-Talisman
 Flask-Cors
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
