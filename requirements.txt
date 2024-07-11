@@ -26,7 +26,7 @@ factory-boy==2.12.0
 coverage==6.3.2
 
 # Utilities
-httpie==3.2.1
+httpie==3.2.3
 
 # Security
 Flask-Talisman
