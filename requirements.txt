@@ -9,7 +9,7 @@ psycopg2-binary==2.9.3
 python-dotenv==0.20.0
 
 # Runtime dependencies
-gunicorn==20.1.0
+gunicorn==22.0.0
 honcho==1.1.0
 
 # Code quality
@@ -26,9 +26,12 @@ factory-boy==2.12.0
 coverage==6.3.2
 
 # Utilities
-httpie==3.2.1
+httpie==3.2.3
 
 # Security
 Flask-Talisman
 Flask-Cors
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
